@@ -10,7 +10,7 @@ import Helloworld from './App';
 
 
 
-ReactDOM.render(h1, document.getElementById('root'));
+ReactDOM.render(<Helloworld link= 'www.artmoc.com' linkText = 'ArtsShop'/>, document.getElementById('root'));
 
 
 //serviceWorker.unregister();

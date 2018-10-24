@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
-class Helloworld extends component {
+class Helloworld extends Component {
 
-  render (){
+  render(){
 
 return(
 
-
-<a href= {this.props.link}> {this.props.linkText}</a>
-
+<a href={this.props.link}>{this.props.linkText}</a>
 
 )
 
-  }
-
-
-
-  
+  } 
 }
+
+export default Helloworld;
