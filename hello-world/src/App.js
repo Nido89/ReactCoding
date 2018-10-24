@@ -4,11 +4,18 @@ import './App.css';
 
 class Helloworld extends Component {
 
+  customStylelink = {
+    backgroundColor : 'lightgrey',
+    textDecoration: 'underline'
+  }
+
   render(){
+
+
 
 return(
 
-<a href={this.props.link}>{this.props.linkText}</a>
+<a href={this.props.link} style= {this.customStylelink}>{this.props.linkText}</a>
 
 )
 

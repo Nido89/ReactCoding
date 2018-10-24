@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import './index.css';
+import './index.css';
 import Helloworld from './App';
+import './App.css';
 //import * as serviceWorker from './serviceWorker';
 
 
@@ -10,7 +11,16 @@ import Helloworld from './App';
 
 
 
-ReactDOM.render(<Helloworld link= 'www.artmoc.com' linkText = 'ArtsShop'/>, document.getElementById('root'));
+ReactDOM.render(
+    
+    
+    <div>  
+        <Helloworld link= 'https://www.artmoc.com' linkText= 'An arts shop'/>   
+        <Helloworld link= 'http://www.talkme.fi' linkText= ' A customer engagement tool'/>  
+        <Helloworld link= 'http://www.adunosolutions.eu' linkText= ' An internet startup'/>     
+        
+         </div>
+    , document.getElementById('root'));
 
 
 //serviceWorker.unregister();
