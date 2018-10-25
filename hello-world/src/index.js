@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Helloworld from './App';
 import './App.css';
+import Method from './Method';
 //import * as serviceWorker from './serviceWorker';
 
 
@@ -17,7 +18,9 @@ ReactDOM.render(
     <div>  
         <Helloworld link= 'https://www.artmoc.com' linkText= 'An arts shop'/>   
         <Helloworld link= 'http://www.talkme.fi' linkText= ' A customer engagement tool'/>  
-        <Helloworld link= 'http://www.adunosolutions.eu' linkText= ' An internet startup'/>     
+        <Helloworld link= 'http://www.adunosolutions.eu' linkText= ' An internet startup'/> 
+
+        <Method></Method>    
         
          </div>
     , document.getElementById('root'));
