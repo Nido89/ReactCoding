@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Helloworld from './App';
+import Helloworld from './Helloworld';
 import './App.css';
 import Method from './Method';
+import Clock from './DigitalClock';
 //import * as serviceWorker from './serviceWorker';
 
 
@@ -20,7 +21,8 @@ ReactDOM.render(
         <Helloworld link= 'http://www.talkme.fi' linkText= ' A customer engagement tool'/>  
         <Helloworld link= 'http://www.adunosolutions.eu' linkText= ' An internet startup'/> 
 
-        <Method></Method>    
+        <Method></Method>   
+        <Clock></Clock> 
         
          </div>
     , document.getElementById('root'));
