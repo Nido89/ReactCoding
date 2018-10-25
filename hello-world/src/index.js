@@ -4,7 +4,7 @@ import './index.css';
 import Helloworld from './Helloworld';
 import './App.css';
 import Method from './Method';
-import Clock from './Digitalclock';
+import Clock from './Clock';
 //import * as serviceWorker from './serviceWorker';
 
 

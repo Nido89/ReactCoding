@@ -1,40 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react' ;
 
+function Digitalclock (props) {
+    //console.log (props.time);
 
-class Clock extends Component {
-    constructor (props){
-        super(props);
-        this.state = {
-
-
-            currentTime: new Date().toLocaleString()
-        }
-        this.updateTime();
-
-    }
-
-updateTime(){
-
-    setInterval(  ()=> {
-        this.setState({
-
-
-            currentTime: new Date().toLocaleString()
-        })
-            
-
-        
-    },1000)
-}
-
-render() {
-
-    return(
-
-        <h3>   {this.state.currentTime}  </h3>
-    )
-    }
+    //to evaluate use curly brackets same like this props for stateful component instead for stateless
+    return <div> {props.time} </div>
+    
 
 
 }
-export default Clock;
+
+export default Digitalclock ;
