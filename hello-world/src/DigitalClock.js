@@ -7,15 +7,25 @@ class Clock extends Component {
         this.state = {
 
 
-            currentTime: new Date().toLocaleTimeString()
+            currentTime: new Date().toLocaleString()
         }
-
-
-        
-
-
+        this.updateTime();
 
     }
+
+updateTime(){
+
+    setInterval(  ()=> {
+        this.setState({
+
+
+            currentTime: new Date().toLocaleString()
+        })
+            
+
+        
+    },1000)
+}
 
 render() {
 
