@@ -1,5 +1,6 @@
 import React from 'react' ;
 
+
 function Digitalclock (props) {
     //console.log (props.time);
 
