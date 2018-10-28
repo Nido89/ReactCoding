@@ -44,6 +44,11 @@ componentDidUpdate(oldProps, oldState){
     console.log('oldState:',oldState);
 }
 
+componentWillUnmount(){
+
+    console.log('Component will unmount triggered');
+
+}
 
 render (){
     console.log ('console for render method');
