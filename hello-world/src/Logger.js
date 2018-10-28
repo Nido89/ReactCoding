@@ -38,6 +38,12 @@ componentWillUpdate(nextProps, nextState){
     console.log('NextState:',nextState);
 
 }
+componentDidUpdate(oldProps, oldState){
+    console.log(' Component did Update');
+    console.log('oldProps:',oldProps);
+    console.log('oldState:',oldState);
+}
+
 
 render (){
     console.log ('console for render method');
