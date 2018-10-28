@@ -15,9 +15,29 @@ componentWillMount(){
     console.log ('component will mount method');
 }
 
+componentDidMount(){
+
+    console.log('Component Did Mount');
+}
 
 
+componentWillReceiveProps(nextProps){
+console.log('NextProps:',nextProps);
+}
 
+shouldComponentUpdate(newProps, newState){
+    console.log('Should Component Update');
+    console.log('NewProps:',newProps);
+    console.log('NewState:',newState);
+    return true;
+}
+
+componentWillUpdate(nextProps, nextState){
+    console.log(' Component will Update');
+    console.log('NextProps:',nextProps);
+    console.log('NextState:',nextState);
+
+}
 
 render (){
     console.log ('console for render method');
