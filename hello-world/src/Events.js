@@ -27,18 +27,19 @@ constructor(props){
     // }
 
     incrementCounter(){
- console.log ('increment');
- if(this.state.counter === 10 ){
-    console.log('You have reached most Highest value');
+//  console.log ('increment');
+ if(this.state.counter <10 ){
+    this.setState({counter: this.state.counter +1});
+    
 }
 else {
 
-this.setState({counter: this.state.counter +1});
+    console.log('You have reached most highest value');
 }
 
     }
     decerementCounter(){
-       console.log ('decrement');
+    //    console.log ('decrement');
        if(this.state.counter === 0 ){
            console.log('You have reached most minimum value');
        }
