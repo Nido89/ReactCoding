@@ -8,7 +8,7 @@ constructor(props){
     super(props);
     this.state = {
 
-        counter:0
+        counter: 0
     }
     // this.incrementCounter = this.incrementCounter.bind(this);
     this.incrementCounter = this.incrementCounter.bind(this);
@@ -27,11 +27,25 @@ constructor(props){
     // }
 
     incrementCounter(){
-console.log ('Increment');
+ console.log ('increment');
+ if(this.state.counter === 10 ){
+    console.log('You have reached most Highest value');
+}
+else {
+
+this.setState({counter: this.state.counter +1});
+}
 
     }
     decerementCounter(){
-        console.log ('Decrement');
+       console.log ('decrement');
+       if(this.state.counter === 0 ){
+           console.log('You have reached most minimum value');
+       }
+        else {
+
+            this.setState({counter: this.state.counter -1});
+        }
 
     }
      
@@ -40,7 +54,7 @@ console.log ('Increment');
 
         return(
             <div>
-                <Counter Counter = {this.state.counter} increment= {this.incrementCounter} decrement = {this.decerementCounter}></Counter>
+                <Counter counter = {this.state.counter} increment= {this.incrementCounter} decrement = {this.decerementCounter} />
 
             {/* <h1>My Events</h1>
             {/* <button onClick={function(){
