@@ -6,7 +6,8 @@ constructor(props){
     super(props);
     this.state = {
 
-        username: ''
+        username: '',
+        allUsers: []
     }
     this.formhandler= this.formhandler.bind(this);
 }
@@ -26,6 +27,7 @@ render(){
 
 <h1>My Forms in ReactJS </h1>
 <input type= 'text' name= 'username' value= {this.state.username }onChange={this.formhandler}></input>
+<button> onClick={} </button>
 <p> {this.state.username} </p>
 
 
