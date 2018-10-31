@@ -6,7 +6,8 @@ import './index.css';
 // import Helloworld from './Helloworld';
 import './App.css';
 
-import MyEvents from './Events';
+// import MyEvents from './Events';
+import Forms from './Forms';
 //import * as serviceWorker from './serviceWorker';
 
 
@@ -26,7 +27,9 @@ ReactDOM.render(
         <Method></Method>   
         <Clock></Clock> 
          */}
-         <MyEvents></MyEvents>
+         {/* <MyEvents></MyEvents> */}
+
+         <Forms></Forms>
 
          </div>
     , document.getElementById('root'));
