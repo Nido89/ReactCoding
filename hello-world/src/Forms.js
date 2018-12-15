@@ -26,6 +26,10 @@ constructor(props){
     this.clickHandler= this.clickHandler.bind(this);
     this.radioHandler= this.radioHandler.bind(this);
     this.checkboxHandler= this.checkboxHandler.bind(this);
+    this.selectHandler= this.selectHandler.bind(this);
+    this.emailHandler= this.emailHandler.bind(this);
+
+    
     
 }
 
@@ -66,14 +70,31 @@ this.setState({
     checkboxGroup : checkbox
 })
 
-
 }
+
+selectHandler(event){
+    this.setState({
+        selectedValue: event.target.value
+    })
+}
+ emailHandler(event){
+     console.log(this.refs.subscriberEmail.value)
+
+
+ }
+
+ 
+
 render(){
 
     return(
     <div>
 
-<h1>My Forms in ReactJS </h1>
+
+        <label>Email: <input type= 'email' ref='subscriberEmail'></input></label>
+        <button onClick= {this.emailHandler}>Subscribe </button>
+
+{/* <h1>My Forms in ReactJS </h1>
 <input type= 'text' name= 'username' value= {this.state.username }onChange={this.formhandler}></input>
 
 <br/>
@@ -115,7 +136,7 @@ Node <input type= 'checkbox' name='tech' value='Node' checked={this.state.checkb
 </label>
 <br/>
 
-<select value= 'Flutter'>
+<select value={this.state.selectedValue} onChange={this.selectHandler} >
     <option value='Ruby'> Ruby </option>
     <option value='Python'> Python</option>
     <option value='Flutter'>Flutter </option>
@@ -127,6 +148,8 @@ Node <input type= 'checkbox' name='tech' value='Node' checked={this.state.checkb
 
 <button onClick={this.clickHandler}> Save Me </button>
 {/* <p> {this.state.username} </p> */}
+
+
 
 
 
