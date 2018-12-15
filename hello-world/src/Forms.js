@@ -18,11 +18,9 @@ constructor(props){
             Express:false,
             React:true,
             Node:false
+        },
+        selectedValue: 'Flutter'
 
-
-
-
-        }
     }
     this.formhandler= this.formhandler.bind(this);
     this.clickHandler= this.clickHandler.bind(this);
@@ -117,7 +115,11 @@ Node <input type= 'checkbox' name='tech' value='Node' checked={this.state.checkb
 </label>
 <br/>
 
-
+<select value= 'Flutter'>
+    <option value='Ruby'> Ruby </option>
+    <option value='Python'> Python</option>
+    <option value='Flutter'>Flutter </option>
+</select>
 
 
 
